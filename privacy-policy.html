@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Video Downloader & Browser</title>
+    <meta name="description" content="Privacy Policy for Video Downloader & Browser (com.dkutility.downloader). Learn how we handle your data and protect your privacy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-hover: #4338CA;
+            --primary-light: #EEF2FF;
+            --text-main: #1F2937;
+            --text-muted: #4B5563;
+            --text-subtle: #9CA3AF;
+            --bg-page: #F9FAFB;
+            --bg-card: #FFFFFF;
+            --border-color: #E5E7EB;
+            --badge-bg: #E0E7FF;
+            --badge-text: #3730A3;
+            --callout-bg: #FEF3C7;
+            --callout-border: #F59E0B;
+            --callout-text: #92400E;
+            --radius-lg: 16px;
+            --radius-md: 10px;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #6366F1;
+                --primary-hover: #818CF8;
+                --primary-light: #1E1B4B;
+                --text-main: #F3F4F6;
+                --text-muted: #D1D5DB;
+                --text-subtle: #9CA3AF;
+                --bg-page: #0F172A;
+                --bg-card: #1E293B;
+                --border-color: #334155;
+                --badge-bg: #312E81;
+                --badge-text: #C7D2FE;
+                --callout-bg: #422006;
+                --callout-border: #D97706;
+                --callout-text: #FDE68A;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header / Hero */
+        header {
+            background: linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #4338CA 100%);
+            color: #FFFFFF;
+            padding: 56px 24px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            color: #E0E7FF;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: 0.025em;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        header p {
+            color: #C7D2FE;
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin: 0 auto 16px;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.875rem;
+            color: #A5B4FC;
+            margin-top: 16px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Layout Container */
+        .main-wrapper {
+            max-width: 960px;
+            margin: -32px auto 60px;
+            padding: 0 20px;
+        }
+
+        .content-card {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-lg);
+            padding: 44px;
+        }
+
+        @media (max-width: 768px) {
+            .content-card {
+                padding: 24px 20px;
+            }
+            header h1 {
+                font-size: 1.875rem;
+            }
+        }
+
+        /* Callout Box */
+        .callout-box {
+            background-color: var(--callout-bg);
+            border-left: 4px solid var(--callout-border);
+            color: var(--callout-text);
+            padding: 16px 20px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 28px 0;
+            font-size: 0.95rem;
+        }
+
+        .callout-box strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 1rem;
+        }
+
+        /* Content Headings */
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin: 36px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2:first-of-type {
+            margin-top: 10px;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin: 24px 0 10px;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        ul, ol {
+            color: var(--text-muted);
+            margin: 0 0 20px 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        li strong {
+            color: var(--text-main);
+        }
+
+        /* Permissions Table */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            margin: 20px 0 28px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.925rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-light);
+            color: var(--primary);
+            font-weight: 600;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.015);
+        }
+
+        code {
+            background-color: var(--badge-bg);
+            color: var(--badge-text);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        }
+
+        /* Highlight feature grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .feature-item {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 18px;
+            background: rgba(0, 0, 0, 0.01);
+        }
+
+        .feature-item h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        /* Contact Box */
+        .contact-box {
+            background-color: var(--primary-light);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin-top: 32px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .contact-link {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 32px 20px;
+            font-size: 0.875rem;
+            color: var(--text-subtle);
+            border-top: 1px solid var(--border-color);
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <span class="app-badge">Official Legal Document</span>
+            <h1>Privacy Policy</h1>
+            <p>Video Downloader &amp; Browser</p>
+            <div class="meta-info">
+                <div class="meta-item">
+                    <span>📦 Package:</span>
+                    <strong><code>com.dkutility.downloader</code></strong>
+                </div>
+                <div class="meta-item">
+                    <span>📅 Effective Date:</span>
+                    <strong>March 2026</strong>
+                </div>
+                <div class="meta-item">
+                    <span>🔄 Last Updated:</span>
+                    <strong>March 2026</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <main class="content-card">
+            
+            <p>
+                Welcome to <strong>Video Downloader &amp; Browser</strong> ("we", "our", or "us"). We are strongly committed to respecting and protecting the privacy of our users. This Privacy Policy outlines the types of information we process, how that information is handled, and our data protection principles when you use our mobile application (the "App").
+            </p>
+
+            <div class="callout-box">
+                <strong>🛡️ Privacy First Commitment</strong>
+                Video Downloader &amp; Browser is designed as a local-first utility. We do <strong>NOT</strong> collect, harvest, store, or sell any personally identifiable information (PII) on external cloud servers. All personal operations, downloads, history, bookmarks, and vault items remain entirely on your device.
+            </div>
+
+            <h2>1. Information We Do NOT Collect</h2>
+            <p>We believe in absolute data minimization. When you use the App:</p>
+            <ul>
+                <li>We do <strong>not</strong> require user registration, account creation, or login to use our core services.</li>
+                <li>We do <strong>not</strong> collect names, email addresses, phone numbers, contacts, or financial details.</li>
+                <li>We do <strong>not</strong> track your precise GPS location.</li>
+                <li>We do <strong>not</strong> transmit your browsing history, bookmarked pages, search queries, or downloaded files to any proprietary remote servers.</li>
+            </ul>
+
+            <h2>2. Information Processed Locally on Your Device</h2>
+            <p>To provide essential downloader and browser features, the App processes and stores certain data locally in your device's isolated storage (using SQLite database and local preferences):</p>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h4>🌐 In-App Browser Data</h4>
+                    <p>Bookmarks, tabs, and temporary browsing cache/cookies required for web sessions are saved exclusively on your local device memory.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>📥 Download History</h4>
+                    <p>Records of your completed, active, and queued downloads (URLs, file paths, file sizes, and download dates) are stored in a local SQLite database.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🔒 Private Vault</h4>
+                    <p>Files moved into the private vault are stored locally in secure app directories. Your vault access PIN is verified locally and never sent over the internet.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>⚙️ Preferences</h4>
+                    <p>App settings such as theme mode, download quality selections, ad-blocker filters, and Wi-Fi preferences are stored locally.</p>
+                </div>
+            </div>
+
+            <h2>3. Device Permissions &amp; How They Are Used</h2>
+            <p>The App requests standard Android/iOS permissions strictly necessary for its features to function. Below is a detailed breakdown:</p>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Category</th>
+                            <th>Purpose &amp; Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code></td>
+                            <td>Network Access</td>
+                            <td>Allows the in-app browser to load websites requested by the user, detect active network connectivity (e.g. Wi-Fi vs. Cellular), and download media streams.</td>
+                        </tr>
+                        <tr>
+                            <td><code>READ_MEDIA_VIDEO</code>, <code>AUDIO</code>, <code>IMAGES</code> / <code>WRITE_EXTERNAL_STORAGE</code></td>
+                            <td>Device Storage</td>
+                            <td>Required to write downloaded videos, audios, and images to your public download directory or photo gallery, and to play back downloaded local media.</td>
+                        </tr>
+                        <tr>
+                            <td><code>POST_NOTIFICATIONS</code></td>
+                            <td>Notifications</td>
+                            <td>Used in Android 13+ to show real-time download progress bar updates, download completions, and task failures.</td>
+                        </tr>
+                        <tr>
+                            <td><code>FOREGROUND_SERVICE</code> &amp; <code>WAKE_LOCK</code></td>
+                            <td>Background Service</td>
+                            <td>Allows large download tasks initiated by the user to complete reliably in the background without being killed prematurely by OS power management.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>4. Third-Party Websites &amp; Built-In Browser</h2>
+            <p>
+                The App includes a built-in browser engine powered by standard platform WebViews (InAppWebView). When you navigate to third-party websites or services:
+            </p>
+            <ul>
+                <li>Any data you enter into third-party websites is directly submitted to those respective third-party web services and is governed by their respective privacy policies.</li>
+                <li>The App includes an optional client-side ad and tracker filter to help reduce third-party tracking scripts loaded by web pages.</li>
+                <li>We do not monitor, record, or intercept your encrypted web sessions or login credentials.</li>
+            </ul>
+
+            <h2>5. YouTube &amp; Copyright Policy Notice</h2>
+            <div class="callout-box" style="border-left-color: #EF4444; background-color: rgba(239, 68, 68, 0.08); color: var(--text-main);">
+                <strong>⚠️ Policy &amp; Copyright Compliance Disclaimer</strong>
+                In strict compliance with Google Play Developer Program Policies and YouTube's Terms of Service, <strong>Video Downloader &amp; Browser does NOT support or allow downloading content from YouTube</strong>. The App is intended only for downloading personal, royalty-free, or publicly permissible media where permitted by applicable laws and content owners.
+            </div>
+
+            <h2>6. Status Saver Feature</h2>
+            <p>
+                The status saver feature accesses locally cached WhatsApp/WhatsApp Business media stored on your device only when explicitly triggered by you. The App reads these local folders to allow you to preview and save selected media to your gallery. No status data is ever transmitted off your device.
+            </p>
+
+            <h2>7. Children's Privacy (COPPA &amp; GDPR Compliance)</h2>
+            <p>
+                Our App is not directed toward children under the age of 13 (or under 16 in the European Union). We do not knowingly solicit or collect information from children. If you become aware that a child has provided any information through third-party web interaction within the app, please contact us so we can provide guidance on clearing local app data.
+            </p>
+
+            <h2>8. Data Retention, Control &amp; Deletion</h2>
+            <p>
+                Since all user data is stored locally on your device:
+            </p>
+            <ul>
+                <li>You can clear your browsing history, cache, cookies, and bookmarks directly inside the App settings.</li>
+                <li>You can delete downloaded files and vault contents at any time using the App's built-in file manager or your device's file manager.</li>
+                <li>Uninstalling the App or choosing "Clear Data / Clear Storage" in your Android/iOS system settings permanently erases all databases, vault items, and cached data stored by the App.</li>
+            </ul>
+
+            <h2>9. Security</h2>
+            <p>
+                We prioritize data security by adhering to platform sandboxing standards. We store database information and vault configuration inside the app's private sandboxed directory, preventing unauthorized access from other standard apps on your device.
+            </p>
+
+            <h2>10. Changes to This Privacy Policy</h2>
+            <p>
+                We may update our Privacy Policy periodically to reflect app updates, technical improvements, or legal requirements. Any modifications will be posted directly on this web page with an updated "Last Updated" revision date. We encourage you to review this page periodically.
+            </p>
+
+            <div class="contact-box">
+                <h3>11. Contact Us</h3>
+                <p>If you have any questions, concerns, or feedback regarding this Privacy Policy or our practices, please reach out to us:</p>
+                <p>
+                    <strong>Email:</strong> <a class="contact-link" href="mailto:support@dkutility.com">support@dkutility.com</a><br>
+                    <strong>Developer / Publisher:</strong> DK Utility Team<br>
+                    <strong>Application:</strong> Video Downloader &amp; Browser (<code>com.dkutility.downloader</code>)
+                </p>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Video Downloader &amp; Browser (com.dkutility.downloader). All rights reserved.</p>
+        <p style="margin-top: 6px;"><a href="#">Back to Top ↑</a></p>
+    </footer>
+
+</body>
+</html>
